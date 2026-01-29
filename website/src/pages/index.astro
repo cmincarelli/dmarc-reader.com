@@ -12,6 +12,8 @@ import {
   ArrowRight,
   Shield
 } from 'lucide-astro';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
@@ -236,25 +238,25 @@ import {
         <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10">
           <img
             id="screenshot-home"
-            src="/screenshots/home.png"
+            src={`${baseUrl}/screenshots/home.png`}
             alt="DMARC Reader Dashboard"
             class="screenshot-img w-full h-auto"
           />
           <img
             id="screenshot-reports"
-            src="/screenshots/reports.png"
+            src={`${baseUrl}/screenshots/reports.png`}
             alt="DMARC Reader Reports View"
             class="screenshot-img w-full h-auto hidden"
           />
           <img
             id="screenshot-issues"
-            src="/screenshots/issues.png"
+            src={`${baseUrl}/screenshots/issues.png`}
             alt="DMARC Reader Issues Detection"
             class="screenshot-img w-full h-auto hidden"
           />
           <img
             id="screenshot-settings"
-            src="/screenshots/settings.png"
+            src={`${baseUrl}/screenshots/settings.png`}
             alt="DMARC Reader Settings"
             class="screenshot-img w-full h-auto hidden"
           />

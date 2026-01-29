@@ -10,7 +10,9 @@
       "Bash(done)",
       "Bash(pnpm dev)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git branch:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: DMARC Reader website\n\n- Built with Astro 5.x + TailwindCSS 4.x\n- Single-page product showcase design\n- \"Technical Elegance\" aesthetic with custom typography\n- Hero, Features, Screenshots, Download, Footer sections\n- GitHub Actions workflow for automatic deployment\n- Social sharing meta tags with OG image\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
