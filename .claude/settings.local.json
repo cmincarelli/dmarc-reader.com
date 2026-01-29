@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm create:*)",
+      "Bash(pnpm astro add:*)",
+      "Bash(pnpm add:*)",
+      "Bash(find:*)",
+      "Bash(for f in Screenshot*.png)",
+      "Bash(do cp \"$f\" website/public/screenshots/)",
+      "Bash(done)",
+      "Bash(pnpm dev)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

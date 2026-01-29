@@ -1,0 +1,447 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  Lock,
+  Zap,
+  BarChart3,
+  Moon,
+  Search,
+  Cog,
+  Download,
+  Github,
+  ArrowRight,
+  Shield
+} from 'lucide-astro';
+---
+
+<BaseLayout
+  title="DMARC Reader - Analyze Email Security Reports"
+  description="A powerful desktop application for analyzing DMARC reports with actionable insights. Privacy-first, fast, and beautifully designed."
+>
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-navy-950/80 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <Shield class="w-7 h-7 text-electric-blue" strokeWidth={2} />
+        <span class="font-bold text-lg tracking-tight">DMARC Reader</span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#features" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Features</a>
+        <a href="#screenshots" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Screenshots</a>
+        <a href="#download" class="text-slate-300 hover:text-white transition-colors text-sm font-medium">Download</a>
+        <a
+          href="https://github.com/cmincarelli/dmarc-reader"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 text-slate-300 hover:text-white transition-colors text-sm font-medium"
+        >
+          <Github class="w-4 h-4" />
+          GitHub
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center relative overflow-hidden grid-pattern">
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-br from-navy-950 via-blue-950/50 to-navy-950 pointer-events-none"></div>
+
+    <!-- Glow effect -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-electric-blue/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 py-32 text-center">
+      <!-- App Icon -->
+      <div class="opacity-0-init animate-fade-in mb-8 inline-block">
+        <div class="w-24 h-24 mx-auto bg-gradient-to-br from-electric-blue to-blue-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-electric-blue/30">
+          <Shield class="w-14 h-14 text-white" strokeWidth={2} />
+        </div>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="opacity-0-init animate-fade-in-up delay-100 text-6xl md:text-7xl font-extrabold tracking-tight mb-6">
+        Analyze DMARC Reports
+        <br />
+        <span class="bg-gradient-to-r from-electric-blue-light to-blue-400 bg-clip-text text-transparent">
+          with Confidence
+        </span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="opacity-0-init animate-fade-in-up delay-200 text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+        A powerful desktop app that makes email security simple.
+        <br />
+        <span class="text-slate-400">Privacy-first, fast, and beautifully designed.</span>
+      </p>
+
+      <!-- CTAs -->
+      <div class="opacity-0-init animate-fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href="https://github.com/cmincarelli/dmarc-reader/releases/latest/download/DMARC-Reader-universal.dmg"
+          class="group inline-flex items-center gap-3 px-8 py-4 bg-electric-blue hover:bg-electric-blue-light text-white font-semibold rounded-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:shadow-electric-blue/30"
+        >
+          <Download class="w-5 h-5" />
+          Download for macOS
+          <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+
+        <a
+          href="https://github.com/cmincarelli/dmarc-reader"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-3 px-8 py-4 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-xl border border-white/10 transition-all duration-200"
+        >
+          <Github class="w-5 h-5" />
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Version badge -->
+      <p class="opacity-0-init animate-fade-in delay-400 mt-8 text-sm text-slate-500 font-mono">
+        v0.1.0 • Universal Binary • macOS 10.15+
+      </p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-32 bg-gradient-to-b from-navy-950 to-navy-900 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Section Header -->
+      <div class="text-center mb-20">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+          Why DMARC Reader?
+        </h2>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+          Built for security professionals who demand power, privacy, and polish.
+        </p>
+      </div>
+
+      <!-- Features Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1: Privacy First -->
+        <div class="group p-8 bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl border border-white/10 hover:border-electric-blue/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric-blue/10">
+          <div class="w-12 h-12 bg-electric-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric-blue/20 transition-colors">
+            <Lock class="w-6 h-6 text-electric-blue" strokeWidth={2} />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Privacy First</h3>
+          <p class="text-slate-400 leading-relaxed">
+            All data stays local on your machine. No cloud services, no data sharing, complete control.
+          </p>
+        </div>
+
+        <!-- Feature 2: Lightning Fast -->
+        <div class="group p-8 bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl border border-white/10 hover:border-electric-blue/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric-blue/10">
+          <div class="w-12 h-12 bg-electric-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric-blue/20 transition-colors">
+            <Zap class="w-6 h-6 text-electric-blue" strokeWidth={2} />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Lightning Fast</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Built with Electron and SQLite for instant report processing and analysis.
+          </p>
+        </div>
+
+        <!-- Feature 3: Visual Insights -->
+        <div class="group p-8 bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl border border-white/10 hover:border-electric-blue/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric-blue/10">
+          <div class="w-12 h-12 bg-electric-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric-blue/20 transition-colors">
+            <BarChart3 class="w-6 h-6 text-electric-blue" strokeWidth={2} />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Visual Insights</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Interactive charts, geographic maps, and health scores at a glance.
+          </p>
+        </div>
+
+        <!-- Feature 4: Beautiful Interface -->
+        <div class="group p-8 bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl border border-white/10 hover:border-electric-blue/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric-blue/10">
+          <div class="w-12 h-12 bg-electric-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric-blue/20 transition-colors">
+            <Moon class="w-6 h-6 text-electric-blue" strokeWidth={2} />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Beautiful Interface</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Native dark mode support with a polished, modern design.
+          </p>
+        </div>
+
+        <!-- Feature 5: Smart Detection -->
+        <div class="group p-8 bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl border border-white/10 hover:border-electric-blue/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric-blue/10">
+          <div class="w-12 h-12 bg-electric-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric-blue/20 transition-colors">
+            <Search class="w-6 h-6 text-electric-blue" strokeWidth={2} />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Smart Detection</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Automatic issue detection with severity analysis and remediation guidance.
+          </p>
+        </div>
+
+        <!-- Feature 6: Auto Import -->
+        <div class="group p-8 bg-gradient-to-br from-white/5 to-white/[0.02] rounded-2xl border border-white/10 hover:border-electric-blue/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-electric-blue/10">
+          <div class="w-12 h-12 bg-electric-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-electric-blue/20 transition-colors">
+            <Cog class="w-6 h-6 text-electric-blue" strokeWidth={2} />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Auto Import</h3>
+          <p class="text-slate-400 leading-relaxed">
+            Watch folders and automatically import new reports as they arrive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Section -->
+  <section id="screenshots" class="py-32 bg-navy-950 relative grid-pattern">
+    <div class="absolute inset-0 bg-gradient-to-b from-navy-900/50 to-navy-950/50 pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+      <div class="text-center mb-20">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+          See It In Action
+        </h2>
+        <p class="text-xl text-slate-400">
+          A glimpse into the DMARC Reader experience.
+        </p>
+      </div>
+
+      <!-- Screenshot Display -->
+      <div class="max-w-5xl mx-auto">
+        <!-- Tabs -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12" id="screenshot-tabs">
+          <button
+            data-tab="home"
+            class="screenshot-tab active px-6 py-3 rounded-xl font-mono text-sm font-medium transition-all duration-200"
+          >
+            Dashboard
+          </button>
+          <button
+            data-tab="reports"
+            class="screenshot-tab px-6 py-3 rounded-xl font-mono text-sm font-medium transition-all duration-200"
+          >
+            Reports
+          </button>
+          <button
+            data-tab="issues"
+            class="screenshot-tab px-6 py-3 rounded-xl font-mono text-sm font-medium transition-all duration-200"
+          >
+            Issues
+          </button>
+          <button
+            data-tab="settings"
+            class="screenshot-tab px-6 py-3 rounded-xl font-mono text-sm font-medium transition-all duration-200"
+          >
+            Settings
+          </button>
+        </div>
+
+        <!-- Screenshot Container -->
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10">
+          <img
+            id="screenshot-home"
+            src="/screenshots/home.png"
+            alt="DMARC Reader Dashboard"
+            class="screenshot-img w-full h-auto"
+          />
+          <img
+            id="screenshot-reports"
+            src="/screenshots/reports.png"
+            alt="DMARC Reader Reports View"
+            class="screenshot-img w-full h-auto hidden"
+          />
+          <img
+            id="screenshot-issues"
+            src="/screenshots/issues.png"
+            alt="DMARC Reader Issues Detection"
+            class="screenshot-img w-full h-auto hidden"
+          />
+          <img
+            id="screenshot-settings"
+            src="/screenshots/settings.png"
+            alt="DMARC Reader Settings"
+            class="screenshot-img w-full h-auto hidden"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="py-32 bg-gradient-to-b from-navy-950 to-black relative">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+        Download DMARC Reader
+      </h2>
+      <p class="text-xl text-slate-400 mb-16">
+        Start analyzing your DMARC reports today.
+      </p>
+
+      <!-- macOS Download -->
+      <div class="bg-gradient-to-br from-electric-blue/20 to-electric-blue/5 rounded-3xl p-12 border border-electric-blue/30 mb-8">
+        <div class="flex items-center justify-center gap-3 mb-4">
+          <svg class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+          </svg>
+          <span class="text-2xl font-bold">macOS</span>
+        </div>
+
+        <a
+          href="https://github.com/cmincarelli/dmarc-reader/releases/latest/download/DMARC-Reader-universal.dmg"
+          class="inline-flex items-center gap-3 px-10 py-5 bg-electric-blue hover:bg-electric-blue-light text-white text-lg font-bold rounded-xl transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:shadow-electric-blue/40 mb-4"
+        >
+          <Download class="w-6 h-6" />
+          Download for macOS
+        </a>
+
+        <p class="text-sm text-slate-400 font-mono">
+          Universal Binary (Apple Silicon & Intel) • macOS 10.15+
+        </p>
+        <p class="text-xs text-slate-500 mt-2 font-mono">Version 0.1.0</p>
+      </div>
+
+      <!-- Coming Soon Platforms -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div class="bg-white/5 rounded-2xl p-8 border border-white/10 opacity-60">
+          <div class="flex items-center justify-center gap-3 mb-3">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+            </svg>
+            <span class="text-xl font-bold">Windows</span>
+          </div>
+          <p class="text-slate-500 text-sm font-medium">Coming Soon</p>
+        </div>
+
+        <div class="bg-white/5 rounded-2xl p-8 border border-white/10 opacity-60">
+          <div class="flex items-center justify-center gap-3 mb-3">
+            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.745 3.498-1.382 1.259-2.118 2.04-2.118 3.182 0 1.235.817 2.232 1.827 2.232.957 0 1.796-.767 2.443-1.812.647-1.044 1.145-2.438 1.145-3.621 0-.895-.246-1.645-.738-2.25 1.228-1.167 2.286-1.738 3.176-1.738.89 0 1.65.572 2.285 1.717.634 1.145.951 2.658.951 4.539 0 1.235-.196 2.25-.588 3.045-.392.795-.981 1.372-1.768 1.731.196.26.457.453.783.574 2.04.756 4.029-.196 5.229-1.862.882-1.228 1.353-2.871 1.353-4.93 0-3.254-1.568-5.886-4.703-7.896C16.213.572 14.259 0 12.504 0z"/>
+            </svg>
+            <span class="text-xl font-bold">Linux</span>
+          </div>
+          <p class="text-slate-500 text-sm font-medium">Coming Soon</p>
+        </div>
+      </div>
+
+      <!-- Additional Links -->
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+        <a href="https://github.com/cmincarelli/dmarc-reader" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+          <Github class="w-4 h-4" />
+          View Source Code
+        </a>
+        <span class="text-slate-700">•</span>
+        <a href="https://github.com/cmincarelli/dmarc-reader#readme" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">
+          Documentation
+        </a>
+        <span class="text-slate-700">•</span>
+        <span class="text-slate-500 font-mono">MIT License</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-white/5 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <!-- Brand -->
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <Shield class="w-8 h-8 text-electric-blue" strokeWidth={2} />
+            <span class="font-bold text-lg">DMARC Reader</span>
+          </div>
+          <p class="text-sm text-slate-500">
+            Privacy-first email security analysis for modern teams.
+          </p>
+        </div>
+
+        <!-- Product -->
+        <div>
+          <h4 class="font-semibold mb-4 text-sm text-slate-400 uppercase tracking-wider">Product</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#download" class="text-slate-400 hover:text-white transition-colors">Download</a></li>
+            <li><a href="https://github.com/cmincarelli/dmarc-reader" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">GitHub</a></li>
+            <li><a href="https://github.com/cmincarelli/dmarc-reader#readme" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">Documentation</a></li>
+            <li><a href="https://github.com/cmincarelli/dmarc-reader/releases" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">Releases</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <h4 class="font-semibold mb-4 text-sm text-slate-400 uppercase tracking-wider">Resources</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://github.com/cmincarelli/dmarc-reader#readme" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">README</a></li>
+            <li><a href="https://github.com/cmincarelli/dmarc-reader/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">Contributing</a></li>
+            <li><a href="https://github.com/cmincarelli/dmarc-reader/issues" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">Report Issues</a></li>
+            <li><a href="https://github.com/cmincarelli/dmarc-reader#-roadmap" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">Roadmap</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div>
+          <h4 class="font-semibold mb-4 text-sm text-slate-400 uppercase tracking-wider">Legal</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://github.com/cmincarelli/dmarc-reader/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">MIT License</a></li>
+            <li><span class="text-slate-500">Privacy: Local-only</span></li>
+            <li><a href="https://github.com/cmincarelli/dmarc-reader#-security" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-slate-500">
+          Made with <span class="text-red-500">❤</span> by Chris M
+        </p>
+        <p class="text-sm text-slate-600">
+          Built with <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-white transition-colors">Astro</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>
+
+<style>
+  /* Screenshot tab styles */
+  .screenshot-tab {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+  }
+
+  .screenshot-tab:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+
+  .screenshot-tab.active {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    color: white;
+  }
+
+  /* Screenshot fade transition */
+  .screenshot-img {
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+
+<script>
+  // Screenshot tab switching
+  const tabs = document.querySelectorAll('.screenshot-tab');
+  const screenshots = document.querySelectorAll('.screenshot-img');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetTab = tab.getAttribute('data-tab');
+
+      // Update active tab
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Show corresponding screenshot
+      screenshots.forEach(img => {
+        if (img.id === `screenshot-${targetTab}`) {
+          img.classList.remove('hidden');
+        } else {
+          img.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
